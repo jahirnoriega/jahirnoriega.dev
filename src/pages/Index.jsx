@@ -12,7 +12,7 @@ function Index() {
       <h1 className="text-5xl font-extrabold my-3">Jahir Noriega.</h1>
       <p className="text-sm my-3">I write code.</p>
       <img
-        src="/src/img/me-O1.jpeg"
+        src="../src/img/me-O1.jpeg"
         alt="JAHIR"
         loading="lazy"
         className="w-48 rounded-full my-3"
