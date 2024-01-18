@@ -2,7 +2,7 @@ function CertificateCard(data) {
   const { certificate_name, desc, cover, url } = data.data;
   return (
     <div className="transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-500 my-8 hover:opacity-100 dark:hover:text-midnight dark:hover:bg-whiter rounded-lg hover:bg-white  ">
-      <a href={url} target="_blank" rel="noreferrer">
+      <a href={url} target="_blank">
         <div className="md:flex mb-3 rounded">
           <img
             src={cover}
