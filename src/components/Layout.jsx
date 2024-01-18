@@ -17,7 +17,7 @@ function Layout() {
       <nav className="flex w-full">
         <div className="w-1/2">
           <a href="/">
-            <img src="../src/img/icon.webp" alt="LOGO" className="w-7" />
+            <img src="../img/icon.webp" alt="LOGO" className="w-7" />
           </a>
         </div>
 
