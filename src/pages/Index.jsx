@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
+import me from "../img/me-O1.jpeg";
 function Index() {
   return (
     <motion.div
@@ -12,7 +13,7 @@ function Index() {
       <h1 className="text-5xl font-extrabold my-3">Jahir Noriega.</h1>
       <p className="text-sm my-3">I write code.</p>
       <img
-        src="../img/me-O1.jpeg"
+        src={me}
         alt="JAHIR"
         loading="lazy"
         className="w-48 rounded-full my-3"

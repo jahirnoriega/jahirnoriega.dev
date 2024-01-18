@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Outlet, Link, useLocation } from "react-router-dom";
+import icon from "../img/icon.webp";
 import "tailwindcss/tailwind.css";
 
 function Layout() {
@@ -17,7 +18,7 @@ function Layout() {
       <nav className="flex w-full">
         <div className="w-1/2">
           <a href="/">
-            <img src="../img/icon.webp" alt="LOGO" className="w-7" />
+            <img src={icon} alt="LOGO" className="w-7" />
           </a>
         </div>
 
