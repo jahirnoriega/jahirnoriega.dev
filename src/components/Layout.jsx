@@ -75,7 +75,7 @@ function Layout() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-20 left-[40%] sm:hidden w-2/5 bg-white dark:bg-black justify-self-end rounded-xl p-2 flex-wrap flex z-10 "
+            className="absolute top-20 left-[55%] sm:hidden w-2/5 bg-white dark:bg-black justify-self-end rounded-xl p-2 flex-wrap flex z-10 "
           >
             <Link
               to="/about"

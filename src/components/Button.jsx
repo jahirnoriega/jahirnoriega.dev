@@ -7,6 +7,7 @@ import {
   FaInbox,
   FaIdCard,
 } from "react-icons/fa6";
+import cv from "../pdf/Resume - Jahir Noriega.pdf";
 
 function Button() {
   return (
@@ -24,7 +25,7 @@ function Button() {
             </button>
             <button
               className="flex pl-1 w-[47%] border border-midnight dark:border-whiter transparent shadow items-center transition ease-in-out delay-200 hover:scale-110 duration-500  p-2 dark:hover:text-midnight dark:hover:bg-whiter rounded-lg hover:bg-midnight hover:text-whiter "
-              onClick={() => window.open("/src/pdf/Resume - Jahir Noriega.pdf")}
+              onClick={() => window.open(cv)}
             >
               <FaIdCard className="h-5 w-auto border-midnight dark:border-whiter mx-3 my-1.5" />
               CV
