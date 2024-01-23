@@ -40,7 +40,7 @@ function About() {
             <td className="w-3/4 ">
               <p className="mb-4">
                 I'm Jahir Noriega, and I'm passionate about coding. I live in
-                Mexico and I'm bilingual.
+                Mexico and I'm bilingual. I love to learn new thing.
               </p>
             </td>
           </tr>
