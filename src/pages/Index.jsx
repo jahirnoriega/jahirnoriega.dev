@@ -1,7 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import me from "../img/me-O1.jpeg";
+import Spinner from "../components/Spinner";
 function Index() {
+  const [isLoading, setIsLoading] = useState(true);
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
   return (
     <motion.div
       initial={{ opacity: 0, y: -20 }}
@@ -12,12 +18,17 @@ function Index() {
     >
       <h1 className="text-5xl font-extrabold my-3">Jahir Noriega.</h1>
       <p className="text-sm my-3">I write code.</p>
-      <img
-        src={me}
-        alt="JAHIR"
-        loading="lazy"
-        className="w-48 rounded-full my-3"
-      />
+      <div className="flex items-center">
+        {isLoading && <Spinner />}
+        <img
+          src={me}
+          alt="JAHIR"
+          loading="lazy"
+          className={`w-48 rounded-full my-3`}
+          onLoad={handleImageLoad}
+        />
+      </div>
+
       <p className="text-sm my-4">
         My name is Jahir Noriega, and I've been learning software development
         since high school. I am currently studying at Universidad Tecnológica de

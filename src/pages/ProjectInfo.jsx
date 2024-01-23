@@ -1,15 +1,18 @@
 import { useLoaderData } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Carousel } from "flowbite-react";
+import { useState } from "react";
+import Spinner from "../components/Spinner";
 
 function ProjectInfo() {
+  const [isLoading, setIsLoading] = useState(true);
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
   const projectsData = useLoaderData();
   const paramURL = new URLSearchParams(window.location.search);
-
   const id = parseInt(paramURL.get("id"));
-
   const projectInfo = projectsData.filter((project) => project.id === id);
-
   const { projectName, lg_desc, url, cover } = projectInfo[0];
 
   return (
@@ -25,12 +28,16 @@ function ProjectInfo() {
       <div className="h-72 sm:h-86 xl:h-96 2xl:h-96">
         <Carousel>
           {cover.map((img) => (
-            <img
-              src={img}
-              alt={projectName}
-              key={img}
-              className="object-cover h-full"
-            />
+            <div className="flex justify-center items-center">
+              {isLoading && <Spinner />}
+              <img
+                src={img}
+                alt={projectName}
+                key={img}
+                className="object-cover h-full"
+                onLoad={handleImageLoad}
+              />
+            </div>
           ))}
         </Carousel>
       </div>

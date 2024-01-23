@@ -39,8 +39,8 @@ function About() {
             <td className="w-1/4 ">About Me</td>
             <td className="w-3/4 ">
               <p className="mb-4">
-                I'm Jahir Noriega, and I'm passionate about both coding and
-                photography. I live in Mexico but I'm bilingual.
+                I'm Jahir Noriega, and I'm passionate about coding. I live in
+                Mexico and I'm bilingual.
               </p>
             </td>
           </tr>
@@ -48,8 +48,11 @@ function About() {
             <td className="w-1/4 "></td>
             <td className="w-3/4 ">
               <p className="mb-4">
-                I come from a large family, which has taught me how to work
-                effectively in teams as well as independently.
+                Fluent in multiple programming languages, I possess
+                certifications in JavaScript, HTML, CSS, PHP, MySQL, Flutter,
+                Arduino, and React. My ongoing learning experiences have
+                equipped me with in-depth knowledge and the ability to
+                proficiently execute projects in these diverse languages.
               </p>
             </td>
           </tr>
