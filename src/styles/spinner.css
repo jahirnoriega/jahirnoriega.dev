@@ -19,9 +19,15 @@
   display: block;
   width: 25%;
   height: 25%;
-  background-color: #fff;
+  background-color: black;
   border-radius: 100%;
   animation: sk-chase-dot-before 2s infinite ease-in-out both;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sk-chase-dot:before {
+    background-color: #fff;
+  }
 }
 
 .sk-chase-dot:nth-child(1) {
