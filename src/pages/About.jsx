@@ -1,25 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-
 import { useLoaderData } from "react-router-dom";
+import { motion } from "framer-motion";
+import { jobs_info } from "../data/jobs";
 import Button from "../components/Button";
 import JobCard from "../components/JobCard";
-import az from "../img/autozone.webp";
 import ImagesGallery from "../components/ImagesGallery";
-import { motion } from "framer-motion";
 
 export function loader() {
-  const jobs = [
-    {
-      id: 1,
-      companyName: "AutoZone BTSSC",
-      position: "Internship",
-      start: 2023,
-      end: "Now",
-      link: "https://btssc.autozone.com",
-      cover: az,
-    },
-  ];
-  return jobs;
+  return jobs_info;
 }
 
 function About() {

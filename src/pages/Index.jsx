@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import me from "../img/me-O1.jpeg";
+import me from "../img/me-O1.webp";
 import Spinner from "../components/Spinner";
 function Index() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,7 +19,7 @@ function Index() {
       <h1 className="text-5xl font-extrabold my-3">Jahir Noriega.</h1>
       <p className="text-sm my-3">I write code.</p>
       <div className="flex items-center">
-        {isLoading && <Spinner />}
+        <div className="flex justify-center">{isLoading && <Spinner />}</div>
         <img
           src={me}
           alt="JAHIR"

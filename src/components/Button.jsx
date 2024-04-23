@@ -15,7 +15,7 @@ function Button() {
       <tr className="items-baseline align-top">
         <td className="w-1/4 "></td>
         <td className="w-3/4 ">
-          <div className="flex justify-between h-8 mb-4">
+          <div className="flex justify-between h-10 mb-4">
             <button
               className="flex pl-1 w-[47%] border border-midnight dark:border-whiter transparent shadow items-center transition ease-in-out delay-200 hover:scale-110 duration-500 p-2 dark:hover:text-midnight dark:hover:bg-whiter rounded-lg hover:bg-midnight hover:text-whiter "
               onClick={() => window.open("mailto:noriegajahir@gmail.com")}
@@ -36,7 +36,7 @@ function Button() {
       <tr className="items-baseline align-top">
         <td className="w-1/4 "></td>
         <td className="w-3/4 ">
-          <div className="flex justify-between h-8 mb-4">
+          <div className="flex justify-between h-10 mb-4">
             <button
               className="flex pl-1 w-[47%] border border-midnight dark:border-whiter transparent shadow items-center transition ease-in-out delay-200 hover:scale-110 duration-500 p-2 dark:hover:text-midnight dark:hover:bg-whiter rounded-lg hover:bg-midnight hover:text-whiter  "
               onClick={() =>
@@ -61,7 +61,7 @@ function Button() {
       <tr className="items-baseline align-top">
         <td className="w-1/4 "></td>
         <td className="w-3/4 ">
-          <div className="flex justify-between h-8 mb-4">
+          <div className="flex justify-between h-10 mb-4">
             <button
               className="flex pl-1 w-[47%] border border-midnight dark:border-whiter transparent shadow items-center transition ease-in-out delay-200 hover:scale-110 duration-500 p-2 dark:hover:text-midnight dark:hover:bg-whiter rounded-lg hover:bg-midnight hover:text-whiter"
               onClick={() =>
