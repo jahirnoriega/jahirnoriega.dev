@@ -13,7 +13,7 @@ export default {
       white: "#ced4da",
       whiter: "#f8f9fa",
       blue: "#2d00f7",
-      midnight: "#0a0b14",
+      midnight: "#232323",
       orange: "#2d00f7",
       black: "#020204",
       hover: "#1b263b",
