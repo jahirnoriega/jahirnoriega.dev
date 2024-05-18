@@ -16,7 +16,7 @@ export default {
       midnight: "#232323",
       orange: "#2d00f7",
       black: "#020204",
-      hover: "#1b263b",
+      hover: "#000000",
     },
     fontFamily: {
       rubik: ["'Rubik', sans-serif"],
