@@ -12,7 +12,6 @@ export default {
     colors: {
       white: "#ced4da",
       whiter: "#f8f9fa",
-      jj
       blue: "#2d00f7",
       midnight: "#232323",
       orange: "#2d00f7",
