@@ -13,7 +13,7 @@ function ImagesGallery() {
   };
   return (
     <div className="flex justify-center">
-      <div className="rounded-2xl mb-9 max-w-xs object-cover h-56 flex justify-center items-center">
+      <div className="rounded-2xl mb-9 max-w-xs object-cover h-48 flex justify-center items-center">
         {isLoading && <Spinner />}
 
         <motion.img
@@ -21,7 +21,7 @@ function ImagesGallery() {
           whileHover={{ rotate: 0, scale: 1.2, zIndex: 3 }}
           transition={{ duration: 0.5 }}
           src={me}
-          className="rounded-2xl mb-9 max-w-xs object-cover h-56 "
+          className="rounded-2xl mb-9 max-w-xs object-cover h-48 "
           loading="lazy"
           onLoad={handleImageLoad}
         />
@@ -30,7 +30,7 @@ function ImagesGallery() {
           whileHover={{ rotate: 0, scale: 1.2, zIndex: 3 }}
           transition={{ duration: 0.5 }}
           src={me_baby}
-          className="rounded-2xl mb-9 max-w-xs object-cover h-56 "
+          className="rounded-2xl mb-9 max-w-xs object-cover h-48 "
           loading="lazy"
           onLoad={handleImageLoad}
         />
@@ -39,7 +39,7 @@ function ImagesGallery() {
           whileHover={{ rotate: 0, scale: 1.2, zIndex: 3 }}
           transition={{ duration: 0.5 }}
           src={eyes}
-          className="hidden sm:flex rounded-2xl mb-9 max-w-xs object-cover h-56 "
+          className="hidden sm:flex rounded-2xl mb-9 max-w-xs object-cover h-48 "
           loading="lazy"
           onLoad={handleImageLoad}
         />

@@ -18,7 +18,7 @@ function JobCard(data) {
               {companyName}
             </p>
           </div>
-          <div className="w-1/5 justify-end">
+          <div className="w-1/3 justify-end">
             <h4>
               {start}-{end}
             </h4>

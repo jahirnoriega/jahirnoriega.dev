@@ -27,6 +27,11 @@ const router = createBrowserRouter([
         loader: jobsLoader,
       },
       {
+        path: "/craft",
+        element: <About />,
+        loader: jobsLoader,
+      },
+      {
         path: "/projects",
         element: <Projects />,
         loader: projectsLoader,

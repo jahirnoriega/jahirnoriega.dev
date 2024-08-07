@@ -14,7 +14,7 @@ function Layout() {
   const location = useLocation();
 
   return (
-    <div className="xl:px-[23%] lg:px-[19%] lg:my-12 md:px-[10%] my-12 px-[8%]  place-content-center">
+    <div className=" 2xl:px-[30%] xl:px-[25%] lg:px-[19%] lg:my-12 md:px-[10%] my-12 px-[6%]  place-content-center">
       <nav className="flex w-full">
         <div className="w-1/2">
           <a href="/">
@@ -34,9 +34,9 @@ function Layout() {
             About
           </Link>
           <Link
-            to="/about"
+            to="/craft"
             className={`${
-              location.pathname === "/about"
+              location.pathname === "/craft"
                 ? "bg-white dark:bg-hover"
                 : "text-center"
             } p-3 hover:bg-white dark:hover:bg-hover hover:cursor-pointer rounded-xl mx-0.5 `}
