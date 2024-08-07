@@ -34,6 +34,16 @@ function Layout() {
             About
           </Link>
           <Link
+            to="/about"
+            className={`${
+              location.pathname === "/about"
+                ? "bg-white dark:bg-hover"
+                : "text-center"
+            } p-3 hover:bg-white dark:hover:bg-hover hover:cursor-pointer rounded-xl mx-0.5 `}
+          >
+            Craft
+          </Link>
+          <Link
             to="/projects"
             className={`${
               location.pathname.includes("/projects")
@@ -83,6 +93,13 @@ function Layout() {
               onClick={toggleMenu}
             >
               About
+            </Link>
+            <Link
+              to="/about"
+              className="w-full text-center p-4 dark:text-whiter"
+              onClick={toggleMenu}
+            >
+              Craft
             </Link>
             <Link
               to="/projects"
