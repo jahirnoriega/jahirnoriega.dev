@@ -20,7 +20,7 @@ function Projects() {
       transition={{ duration: 0.5 }}
       className="text-midnight dark:text-whiter mt-12"
     >
-      <h1 className="text-4xl font-extrabold my-3">Projects.</h1>
+      <h1 className="text-3xl font-bold my-3">Projects.</h1>
       <p className="text-sm my-3">
         Here are some of the projects I've worked on.
       </p>

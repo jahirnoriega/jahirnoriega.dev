@@ -16,7 +16,7 @@ function Index() {
       transition={{ duration: 0.5 }}
       className="text-midnight dark:text-whiter mt-12"
     >
-      <h1 className="text-5xl font-extrabold my-3">Jahir Noriega.</h1>
+      <h1 className="text-4xl font-bold my-3">Jahir Noriega.</h1>
       <p className="text-sm my-3">I write code.</p>
       <div className="flex items-center">
         <div className="flex justify-center">{isLoading && <Spinner />}</div>
@@ -24,7 +24,7 @@ function Index() {
           src={me}
           alt="JAHIR"
           loading="lazy"
-          className={`w-48 rounded-full my-3`}
+          className={`w-48 rounded-3xl my-3`}
           onLoad={handleImageLoad}
         />
       </div>

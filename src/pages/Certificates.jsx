@@ -19,7 +19,7 @@ function Certificates() {
       transition={{ duration: 0.5 }}
       className="text-midnight dark:text-whiter mt-12"
     >
-      <h1 className="text-4xl font-extrabold my-3">Certificates.</h1>
+      <h1 className="text-3xl font-bold my-3">Certificates.</h1>
       <p className="text-sm my-3">
         Here, you can see some of the certificates that I have obtained over the
         years.

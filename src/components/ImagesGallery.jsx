@@ -17,21 +17,11 @@ function ImagesGallery() {
         {isLoading && <Spinner />}
 
         <motion.img
-          initial={{ rotate: -7 }}
-          whileHover={{ rotate: 0, scale: 1.2, zIndex: 3 }}
-          transition={{ duration: 0.5 }}
-          src={me}
-          className="rounded-2xl mb-9 max-w-xs object-cover h-56"
-          loading="lazy"
-          onLoad={handleImageLoad}
-        />
-
-        <motion.img
           initial={{ rotate: 7 }}
           whileHover={{ rotate: 0, scale: 1.2, zIndex: 3 }}
           transition={{ duration: 0.5 }}
           src={top}
-          className="hidden sm:flex rounded-2xl mb-9 max-w-xs object-cover h-56 "
+          className="rounded-2xl mb-9 max-w-xs object-cover h-56 "
           loading="lazy"
           onLoad={handleImageLoad}
         />

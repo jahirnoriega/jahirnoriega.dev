@@ -14,11 +14,11 @@ function Layout() {
   const location = useLocation();
 
   return (
-    <div className="lg:px-[26%] lg:my-12 md:px-[16%] my-12 px-[8%]  place-content-center">
+    <div className="xl:px-[23%] lg:px-[19%] lg:my-12 md:px-[10%] my-12 px-[8%]  place-content-center">
       <nav className="flex w-full">
         <div className="w-1/2">
           <a href="/">
-            <img src={icon} alt="LOGO" className="w-7" />
+            <img src={icon} alt="Jahir" className="w-7" />
           </a>
         </div>
 
