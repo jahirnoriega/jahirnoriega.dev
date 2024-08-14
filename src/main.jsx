@@ -1,16 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import About, { loader as jobsLoader } from "./pages/About";
 import Layout from "./components/Layout";
 import Index from "./pages/Index";
+import About, { loader as jobsLoader } from "./pages/About";
+import Craft, { loader as craftLoader } from "./pages/Craft";
 import Projects, { loader as projectsLoader } from "./pages/Projects";
 import ProjectInfo from "./pages/ProjectInfo";
 import Certificates, {
   loader as loaderCertificate,
 } from "./pages/Certificates";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import NotFound from "./pages/NotFound";
+import "./index.css";
+import CraftPost from "./pages/CraftPost";
 
 const router = createBrowserRouter([
   {
@@ -28,8 +31,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/craft",
-        element: <About />,
-        loader: jobsLoader,
+        element: <Craft />,
+        loader: craftLoader,
+      },
+      {
+        path: "/craft/:postId",
+        element: <CraftPost />,
+        errorElement: <NotFound />,
+        loader: craftLoader,
       },
       {
         path: "/projects",

@@ -36,7 +36,7 @@ function Layout() {
           <Link
             to="/craft"
             className={`${
-              location.pathname === "/craft"
+              location.pathname.includes("/craft")
                 ? "bg-white dark:bg-hover"
                 : "text-center"
             } p-3 hover:bg-white dark:hover:bg-hover hover:cursor-pointer rounded-xl mx-0.5 `}
@@ -95,7 +95,7 @@ function Layout() {
               About
             </Link>
             <Link
-              to="/about"
+              to="/craft"
               className="w-full text-center p-4 dark:text-whiter"
               onClick={toggleMenu}
             >
