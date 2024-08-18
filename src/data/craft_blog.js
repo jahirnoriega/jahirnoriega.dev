@@ -1,9 +1,16 @@
+//WIDGETS
 import Widget from "../components/craft/widgets/Widget";
 import WidgetSm from "../components/craft/widgets/WidgetSm";
 import ic_widget from "../img/craft/widget/widget_cover.jpg";
+//NASA
+import ic_nasa from "../img/craft/nasa_api/nasa_ic.png";
+import hm_nasa from "../img/craft/nasa_api/home_nasa.png";
+import dt_nasa from "../img/craft/nasa_api/date_nasa.png";
+
 export const blog = [
   {
     id: 1,
+    date: "July 30, 2024",
     title: "Using Tailwind to create Apple like Widgets",
     desc: "In this practice, I created some weather widgets in the style of Apple. I used Tailwind to create them, and in this entry, I’m going to cover my thoughts and what I learned about it..",
     entrance:
@@ -84,5 +91,72 @@ export const blog = [
     cover: ic_widget,
     component: WidgetSm,
     component2: Widget,
+  },
+  {
+    id: 2,
+    title: "Getting images from the NASA using their public API",
+    date: "August 18, 2024",
+    desc: "I built a website that uses NASA's API to access their vast database of universe photos. I created this project to practice API management—receiving, sending, and handling data to retrieve images in return.",
+    entrance:
+      "This is a very simple project that consists of consuming images from the NASA API. The website has only two buttons: one that retrieves the image of the current day and another that allows you to get an image from a specific date.",
+    entrance2:
+      "When you choose the first option, it retrieves the title, image, and date from NASA's API. This is done by using an API key and fetching the data in a useEffect hook. The data is then stored and displayed based on the user's selection. The code also includes functions to control the visibility of certain elements in the UI.",
+    entrance3:
+      "The second button allows you to input a specific date and retrieve an image from NASA taken on that date. This process is similar to the first, with the main difference being that you can select a date. The images and input fields are simple components that receive and update information in the parent component. When you submit the date, the component handles the input, shows a message if no date is provided, and then triggers the process to fetch the image for that particular date.",
+    entrance4:
+      "In conclusion, in this small project, I learned how to manage components and APIs using concise code in React. I also practiced using useEffect and useState, which are simple yet fundamental features in React that provide a solid foundation for understanding how React can be applied to more complex problems. Finally, I'll leave a link to this project so you can try it out yourself! ",
+    code: `  
+      useEffect(() => {
+      const getPicture = async () => {
+          const url =
+            "https://api.nasa.gov/planetary/apod?api_key=APIKEY";
+          const response = await fetch(url);
+          const result = await response.json();
+          setPictureNasa(result);
+          };
+        getPicture();  
+      }, [dynamicURL]);
+
+const handleButtonIOTD = () => {
+  setImageVisible(true);
+};
+`,
+    code2: `function InputDate({ setImageVisible, setDynamicURL, datePic, setDatePic }) {
+  const today = new Date().toISOString().split("T")[0];
+  const [messVisible, setMessVisible] = useState(false);
+   const handleSubmit = (e) => {
+    e.preventDefault();
+    if (datePic === "") {
+      setMessVisible(true);
+      return;
+    }
+    setMessVisible(false);
+    setImageVisible(true);
+    setDynamicURL(true);
+  };
+
+  return (
+    <motion.div initial="hidden" animate="visible" variants={formVariants}>
+      <form onSubmit={handleSubmit}>
+        <input
+          className="p-3 rounded-xl m-2"
+          type="date"
+          max={today}
+          onChange={(e) => setDatePic(e.target.value)}
+        />
+        <motion.input
+          className="p-3 rounded-xl bg-white m-2 cursor-pointer"
+          type="submit"
+          value="SEND"
+        />
+      </form>
+      {messVisible && <ErrorMess message={"You have to pick a date"} />}
+    </motion.div>
+  );`,
+    cover: ic_nasa,
+    img: hm_nasa,
+    img2: ic_nasa,
+    img3: dt_nasa,
+    url: "https://nasa-api-jn.netlify.app/",
   },
 ];
