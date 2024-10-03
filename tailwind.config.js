@@ -31,7 +31,7 @@ export default {
       code: "#111827",
     },
     fontFamily: {
-      rubik: ["'Rubik', sans-serif"],
+      rubik: ["'Rubik',sans-serif"],
       sans: ['"Inter"', "sans-serif"],
     },
   },
