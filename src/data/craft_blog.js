@@ -6,6 +6,8 @@ import ic_widget from "../img/craft/widget/widget_cover.jpg";
 import ic_nasa from "../img/craft/nasa_api/nasa_ic.png";
 import hm_nasa from "../img/craft/nasa_api/home_nasa.png";
 import dt_nasa from "../img/craft/nasa_api/date_nasa.png";
+//MAPS
+import Map from "../components/craft/maps/Map";
 
 export const blog = [
   {
@@ -158,5 +160,26 @@ const handleButtonIOTD = () => {
     img2: ic_nasa,
     img3: dt_nasa,
     url: "https://nasa-api-jn.netlify.app/",
+  },
+  {
+    id: 3,
+    title: "Beautiful Maps using mapbox",
+    date: "October 3, 2024",
+    desc: "I built a website that uses NASA's API to access their vast database of universe photos. I created this project to practice API management—receiving, sending, and handling data to retrieve images in return.",
+    entrance: "   asdasd.",
+    entrance2:
+      "When you choose the first option, it retrieves the title, image, and date from NASA's API. This is done by using an API key and fetching the data in a useEffect hook. .",
+    entrance3:
+      "The second button allows you to input a specific date and retrieve an image from NASA taken on that date. This process is similar to the first, with the main difference.",
+    entrance4: "In conclusion",
+    code: `  
+`,
+    code2: `
+`,
+    cover: ic_nasa,
+    img: hm_nasa,
+    cover: ic_widget,
+    component: Map,
+    component2: Widget,
   },
 ];
